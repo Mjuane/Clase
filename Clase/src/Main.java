@@ -79,7 +79,9 @@ public class Main {
                 break;
             default:
                 System.out.println("El mes es invalido");
+                break;
         }
+
 
     }
 }
