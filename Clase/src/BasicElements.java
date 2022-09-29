@@ -98,6 +98,10 @@ public class BasicElements {
         System.out.println("Ejercicio 11");
         System.out.println("********");
         //Solución
+        int total1 = 2, num1 = 3;
+        total1 = ++num1;
+        System.out.println("El valor de total1 es: " + total1);
+        System.out.println("El valor de num1 es: " + num1);
 
         //Ejercicio 12
         System.out.println("********");
