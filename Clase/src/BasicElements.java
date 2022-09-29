@@ -36,6 +36,10 @@ public class BasicElements {
         System.out.println("Ejercicio 5");
         System.out.println("********");
         //Solución
+        int z;
+        double u = 232.675;
+        z = (int)(u + 0.5);
+        System.out.println("El valor de x es: " + z);
 
         //Ejercicio 6
         System.out.println("********");
