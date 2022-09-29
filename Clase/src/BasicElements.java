@@ -29,6 +29,7 @@ public class BasicElements {
         System.out.println("Ejercicio 4");
         System.out.println("********");
         //Solución
+        System.out.println("Para guardar si cierto valor entero es primo o no se necesita un tipo boolean");
 
         //Ejercicio 5
         System.out.println("********");
