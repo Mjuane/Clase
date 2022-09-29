@@ -22,6 +22,7 @@ public class BasicElements {
         System.out.println("Ejercicio 3");
         System.out.println("********");
         //Solución
+        System.out.println("Para guardar el valor 1.618034 se necesita una variable de tipo double");
 
         //Ejercicio 4
         System.out.println("********");
