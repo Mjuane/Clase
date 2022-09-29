@@ -14,7 +14,7 @@ public class BasicOutput {
         System.out.println("********");
         //Solución  %s es para determinar que el valor de var es String
         String var01 = "Hello!";
-        System.out.printf("%s", var01);;
+        System.out.printf("%s", var01);
         System.out.println();
 
         //Ejercicio 3
@@ -114,8 +114,7 @@ public class BasicOutput {
         System.out.println("Ejercicio 12");
         System.out.println("********");
         //Solución
-        System.out.printf("\"Hello world\"");
-        System.out.println();
+        System.out.println("\"Hello world\"");
 
         //Ejercicio 13
         System.out.println("********");
