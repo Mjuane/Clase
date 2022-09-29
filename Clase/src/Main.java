@@ -58,28 +58,11 @@ public class Main {
             System.out.println("Ninguna de las dos variables no cumple el requisito");
         }
 
-        switch (month){
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                System.out.println("Hay 31 dias en este mes");
-                break;
-            case 2:
-                System.out.println("Hay 28 dias en este mes");
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                System.out.println("Hay 30 dias en este mes");
-                break;
-            default:
-                System.out.println("El mes es invalido");
-                break;
+        switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12 -> System.out.println("Hay 31 dias en este mes");
+            case 2 -> System.out.println("Hay 28 dias en este mes");
+            case 4, 6, 9, 11 -> System.out.println("Hay 30 dias en este mes");
+            default -> System.out.println("El mes es invalido");
         }
 
 
