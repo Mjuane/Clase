@@ -143,6 +143,13 @@ public class BasicElements {
         System.out.println("Ejercicio 15");
         System.out.println("********");
         //Solución
+        boolean valor1 = false, valor2 = false;
+        int u = 3;
+        x = 6;
+        valor1 = (x < 5) || (x > u);
+        valor2 = (x < 5) || (u == x);
+        System.out.println("El valor de valor1 es: " + valor1);
+        System.out.println("El valor de valor2 es: " + valor2);
 
         //Ejercicio 16
         System.out.println("********");
