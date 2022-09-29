@@ -64,7 +64,10 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 8");
         System.out.println("********");
-        //Solución
+        //Solución %d indica que la var asignada es un digito
+        int var1 = 2;
+        System.out.printf("%d", var1);
+        System.out.println();
 
         //Ejercicio 9
         System.out.println("********");
