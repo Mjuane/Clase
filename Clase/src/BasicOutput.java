@@ -73,7 +73,7 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 9");
         System.out.println("********");
-        //Solución  %f defina un valor float que por defecto muestra 6 decimales
+        //Solución  %f defina un valor float que por defecto muestra 6 decimales y redondeando el resultado si es necesario
         double var001 = 2.55;
         System.out.printf("%f", var001);
         System.out.println();
@@ -83,6 +83,9 @@ public class BasicOutput {
         System.out.println("Ejercicio 10");
         System.out.println("********");
         //Solución
+        double var010 = 2.123456789;
+        System.out.printf("%f", var010);
+        System.out.println();
 
         //Ejercicio 11
         System.out.println("********");
