@@ -129,6 +129,7 @@ public class BasicOutput {
         System.out.println("Ejercicio 14");
         System.out.println("********");
         //Solución
+        System.out.println(firstName + " " + lastName);
 
         //Ejercicio 15
         System.out.println("********");
