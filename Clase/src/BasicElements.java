@@ -121,6 +121,9 @@ public class BasicElements {
         System.out.println("Ejercicio 13");
         System.out.println("********");
         //Solución
+        int incremento;
+        incremento = 1;
+        System.out.println(++incremento + " " + incremento++ + " " + incremento);
 
         //Ejercicio 14
         System.out.println("********");
