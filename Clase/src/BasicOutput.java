@@ -91,7 +91,21 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 11");
         System.out.println("********");
-        //Solución
+        //Solución \ es un caracter de escape para escapar una letra de algo
+        // No visibles
+        //
+        //‘\n’ = salto de linea
+        //‘\t’ = una tabulacion de 4 espacios
+        //‘\b’ = borra un caracter hacia atras
+        //‘\0’ = final de una cadena de caracteres
+        //Visibles
+        //
+        //‘\%’ = un porcentaje
+        //‘\’’ = una comilla simple
+        //‘\”’ = una comilla double
+        //Asta el propio caracter se escapa asi mismo
+        //
+        //‘\\’
         System.out.print("Hello World\n");
         System.out.println("Hello World");
 
@@ -108,6 +122,7 @@ public class BasicOutput {
         System.out.println("Ejercicio 13");
         System.out.println("********");
         //Solución
+        System.out.println("Hello world \\n");
 
         //Ejercicio 14
         System.out.println("********");
