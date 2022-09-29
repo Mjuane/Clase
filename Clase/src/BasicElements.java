@@ -66,6 +66,7 @@ public class BasicElements {
         System.out.println("Ejercicio 8");
         System.out.println("********");
         //Solución
+        System.out.println("No se puede hacer la asignación x=y cuando x es int e y es boolean");
 
         //Ejercicio 9
         System.out.println("********");
