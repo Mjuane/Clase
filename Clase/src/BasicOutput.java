@@ -135,5 +135,7 @@ public class BasicOutput {
         System.out.println("Ejercicio 15");
         System.out.println("********");
         //Solución
+        String fullName = firstName + " " + lastName;
+        System.out.println(fullName);
     }
 }
