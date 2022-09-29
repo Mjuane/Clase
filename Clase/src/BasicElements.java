@@ -13,9 +13,9 @@ public class BasicElements {
         System.out.println("Ejercicio 2");
         System.out.println("********");
         //Solución
-        double x =5.5, y = 0.23;
-        y = y +(int)x;
-        System.out.println("El valor de y es: " + y);
+        double z =5.5, u = 0.23;
+        u = u +(int)z;
+        System.out.println("El valor de y es: " + u);
 
         //Ejercicio 3
         System.out.println("********");
@@ -36,16 +36,17 @@ public class BasicElements {
         System.out.println("Ejercicio 5");
         System.out.println("********");
         //Solución
-        int z;
-        double u = 232.675;
-        z = (int)(u + 0.5);
-        System.out.println("El valor de x es: " + z);
+        int x;
+        u = 232.675;
+        x = (int)(u + 0.5);
+        System.out.println("El valor de x es: " + x);
 
         //Ejercicio 6
         System.out.println("********");
         System.out.println("Ejercicio 6");
         System.out.println("********");
         //Solución
+
 
         //Ejercicio 7
         System.out.println("********");
