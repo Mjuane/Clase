@@ -130,6 +130,13 @@ public class BasicElements {
         System.out.println("Ejercicio 14");
         System.out.println("********");
         //Solución
+        int a = 1, b = 2, c = 3, d = 1;
+        float r, s = (float)3.0;
+        r = a + b / c + d / a;
+        s = r - s;
+        r = (long) s;
+        r = ++r;
+        System.out.println("El valor de r es: " + r);
 
         //Ejercicio 15
         System.out.println("********");
