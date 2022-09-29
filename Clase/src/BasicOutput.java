@@ -38,7 +38,7 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 5");
         System.out.println("********");
-        //Solución  \n salto de linea entre las dos var
+        //Solución  \n indica salto de linea
         System.out.printf("%s\n%s", var01, var02);
         System.out.println();
 
@@ -46,7 +46,9 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 6");
         System.out.println("********");
-        //Solución
+        //Solución  \t indica una tabulacion de 4 espacios
+        System.out.printf("%s\t%s", var01, var02);
+        System.out.println();
 
         //Ejercicio 7
         System.out.println("********");
