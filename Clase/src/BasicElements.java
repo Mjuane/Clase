@@ -156,6 +156,14 @@ public class BasicElements {
         System.out.println("Ejercicio 16");
         System.out.println("********");
         //Solución
+        valor1 = false;
+        valor2 = false;
+        x = 6;
+        u = 3;
+        valor1 = (x < 5) && (x > u);
+        valor2 = (x > 5) && (u == x);
+        System.out.println("El valor de valor1 es: " + valor1);
+        System.out.println("El valor de valor2 es: " + valor2);
 
         //Ejercicio 17
         System.out.println("********");
