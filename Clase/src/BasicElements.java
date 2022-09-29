@@ -170,6 +170,10 @@ public class BasicElements {
         System.out.println("Ejercicio 17");
         System.out.println("********");
         //Solución
+        x = 2;
+        u = 5;
+        x *= u + 2;
+        System.out.println("El valor de x es: " + x);
 
         //Ejercicio 18
         System.out.println("********");
