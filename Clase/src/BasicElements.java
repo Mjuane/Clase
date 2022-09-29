@@ -6,12 +6,16 @@ public class BasicElements {
         System.out.println("Ejercicio 1");
         System.out.println("********");
         //Solución
+        System.out.println("El identificador: \"2Nivel\" no es valido en Java");
 
         //Ejercicio 2
         System.out.println("********");
         System.out.println("Ejercicio 2");
         System.out.println("********");
         //Solución
+        double x =5.5, y = 0.23;
+        y = y +(int)x;
+        System.out.println("El valor de y es: " + y);
 
         //Ejercicio 3
         System.out.println("********");
