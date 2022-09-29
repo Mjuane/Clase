@@ -32,6 +32,9 @@ public class BasicOutput {
         System.out.println("********");
         //Solución
 
+        System.out.printf("%s %s", var01, var02);
+        System.out.println();
+
         //Ejercicio 5
         System.out.println("********");
         System.out.println("Ejercicio 5");
