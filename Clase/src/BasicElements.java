@@ -86,6 +86,12 @@ public class BasicElements {
         System.out.println("Ejercicio 10");
         System.out.println("********");
         //Solución
+        char total = 'A', num = 'C';
+        total = ++num;
+        num = total++;
+        System.out.println("El valor de total es: " + total);
+        System.out.println("El valor de num es: " + num);
+
 
         //Ejercicio 11
         System.out.println("********");
