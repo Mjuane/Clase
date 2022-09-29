@@ -12,7 +12,7 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 2");
         System.out.println("********");
-        //Solución
+        //Solución  %s es para determinar que el valor de var es String
         String var01 = "Hello!";
         System.out.printf("%s", var01);;
         System.out.println();
@@ -21,7 +21,7 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 3");
         System.out.println("********");
-        //Solución
+        //Solución  Cada %s determina que las dos var son string y que iran en esa posición
         String var02 = "How are you?";
         System.out.printf("My friend! %s %s", var01, var02);
         System.out.println();
@@ -31,7 +31,6 @@ public class BasicOutput {
         System.out.println("Ejercicio 4");
         System.out.println("********");
         //Solución
-
         System.out.printf("%s %s", var01, var02);
         System.out.println();
 
@@ -39,7 +38,9 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 5");
         System.out.println("********");
-        //Solución
+        //Solución  \n salto de linea entre las dos var
+        System.out.printf("%s\n%s", var01, var02);
+        System.out.println();
 
         //Ejercicio 6
         System.out.println("********");
