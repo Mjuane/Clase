@@ -55,6 +55,10 @@ public class BasicOutput {
         System.out.println("Ejercicio 7");
         System.out.println("********");
         //Solución
+        String firstName = "John";
+        String lastName = "Doe";
+        System.out.printf("%s %s", firstName, lastName);
+        System.out.println();
 
         //Ejercicio 8
         System.out.println("********");
