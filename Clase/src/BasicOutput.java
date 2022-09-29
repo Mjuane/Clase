@@ -64,7 +64,7 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 8");
         System.out.println("********");
-        //Solución %d indica que la var asignada es un digito
+        //Solución %d indica que la var asignada es un int
         int var1 = 2;
         System.out.printf("%d", var1);
         System.out.println();
@@ -73,7 +73,10 @@ public class BasicOutput {
         System.out.println("********");
         System.out.println("Ejercicio 9");
         System.out.println("********");
-        //Solución
+        //Solución  %f defina un valor float que por defecto muestra 6 decimales
+        double var001 = 2.55;
+        System.out.printf("%f", var001);
+        System.out.println();
 
         //Ejercicio 10
         System.out.println("********");
