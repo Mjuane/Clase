@@ -56,6 +56,10 @@ public class BasicElements {
         System.out.println("Ejercicio 7");
         System.out.println("********");
         //Solución
+        x = 0;
+        y = 1243.5321;
+        x =(short)(y - 0.9);
+        System.out.println("El valor de x es: " + x);
 
         //Ejercicio 8
         System.out.println("********");
