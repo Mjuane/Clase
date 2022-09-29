@@ -108,6 +108,13 @@ public class BasicElements {
         System.out.println("Ejercicio 12");
         System.out.println("********");
         //Solución
+        x = 1;
+        boolean r1, r2, r3, r4;
+        r1 = (x > 1) && (x++ < 10);
+        r2 = (10 < x) && (15 > x++);
+        r3 = (10 == x) || (20 > x++);
+        r4 = (10 == x) || (20 > x++);
+        System.out.println(r1 + " " + r2 + " " + r3 + " " + r4);
 
         //Ejercicio 13
         System.out.println("********");
