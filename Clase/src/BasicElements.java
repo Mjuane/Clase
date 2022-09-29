@@ -73,6 +73,13 @@ public class BasicElements {
         System.out.println("Ejercicio 9");
         System.out.println("********");
         //Solución
+        int var1 = 15;
+        {
+            int var2 = 30;
+        }
+        System.out.println("var1= " + var1);
+        System.out.println("var2= " + "No se puede acceder a var2 porque esta dentro de otro bloque, solo se puede acceder a vars del mismo bloque en cuestion");
+
 
         //Ejercicio 10
         System.out.println("********");
