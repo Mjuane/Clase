@@ -193,6 +193,10 @@ public class BasicElements {
         System.out.println("Ejercicio 19");
         System.out.println("********");
         //Solución
+        u = 0;
+        int n = 5;
+        u = n++ + ++n;
+        System.out.println(n + " " + u);
 
         //Ejercicio 20
         System.out.println("********");
