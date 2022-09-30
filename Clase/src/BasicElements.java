@@ -180,6 +180,13 @@ public class BasicElements {
         System.out.println("Ejercicio 18");
         System.out.println("********");
         //Solución
+        char c0;
+        c0 = 'c';
+        System.out.printf("c = %c\n", c0);
+        ++c0;
+        System.out.printf("c = %c\n", c0);
+        System.out.printf("c = %c%c\n", c0++, c0--);
+        System.out.printf("c = %c\n", c0);
 
         //Ejercicio 19
         System.out.println("********");
