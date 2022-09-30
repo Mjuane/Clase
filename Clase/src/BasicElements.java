@@ -203,6 +203,10 @@ public class BasicElements {
         System.out.println("Ejercicio 20");
         System.out.println("********");
         //Solución
+        boolean m = false, n0 = false, p, q;
+        p = (!m) && (n0);
+        q = (!m) || (n0);
+        System.out.println("p= " + p + " q= " + q);
 
         //Ejercicio 21
         System.out.println("********");
