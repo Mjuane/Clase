@@ -225,6 +225,11 @@ public class BasicElements {
         System.out.println("Ejercicio 22");
         System.out.println("********");
         //Solución
+        char a0 = 'a';
+        x = 5;
+        a0 += 5;
+        x /= 3;
+        System.out.println(a0 + " " + x);
 
         //Ejercicio 23
         System.out.println("********");
