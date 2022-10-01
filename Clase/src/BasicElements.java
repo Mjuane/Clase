@@ -213,6 +213,12 @@ public class BasicElements {
         System.out.println("Ejercicio 21");
         System.out.println("********");
         //Solución
+        int valor01 = 5, valor02 = 5;
+        m = false;
+        n0 = false;
+        p = (valor01 >= valor02);
+        q = (valor01 < valor02);
+        System.out.println("p= " + p + " q= " + q);
 
         //Ejercicio 22
         System.out.println("********");
