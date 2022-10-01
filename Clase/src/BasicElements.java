@@ -244,12 +244,14 @@ public class BasicElements {
         s0 = (++var2 < 2);
         System.out.println("s= " + s0 + " var2= " + var2);
 
-
         //Ejercicio 24
         System.out.println("********");
         System.out.println("Ejercicio 24");
         System.out.println("********");
         //Solución
+        double saldo;
+        saldo = (1 / 5) * 10;
+        System.out.println(saldo * 5.0);
 
         //Ejercicio 25
         System.out.println("********");
