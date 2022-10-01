@@ -236,6 +236,14 @@ public class BasicElements {
         System.out.println("Ejercicio 23");
         System.out.println("********");
         //Solución
+        var1 = 1;
+        int var2 = 1;
+        boolean r0, s0;
+        r0 = (var1++ < 2);
+        System.out.println("r= " + r0 + " var1= " + var1);
+        s0 = (++var2 < 2);
+        System.out.println("s= " + s0 + " var2= " + var2);
+
 
         //Ejercicio 24
         System.out.println("********");
