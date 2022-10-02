@@ -285,6 +285,11 @@ public class BasicElements {
         System.out.println("Ejercicio 28");
         System.out.println("********");
         //Solución
+        double a01 = 2, b01 = 5;
+        c = 2;
+        int d0 = 1;
+        x = (int)(b01 / a01) / c + d0;
+        System.out.println("x: " + x);
 
         //Ejercicio 29
         System.out.println("********");
