@@ -258,6 +258,10 @@ public class BasicElements {
         System.out.println("Ejercicio 25");
         System.out.println("********");
         //Solución
+        int op;
+        int a2 = 2, a8 = 8, a4 = 4, a1 = 1;
+        op = a2 + a8 / a4 + a1;
+        System.out.printf("op= %d\n", op);
 
         //Ejercicio 26
         System.out.println("********");
