@@ -278,6 +278,7 @@ public class BasicElements {
         System.out.println("Ejercicio 27");
         System.out.println("********");
         //Solución
+        System.out.println(3 + 11 / 5 * 2 + 3 % 2);
 
         //Ejercicio 28
         System.out.println("********");
