@@ -407,6 +407,18 @@ public class BasicElements {
         System.out.println("Problema 2");
         System.out.println("********");
         //Solución
+        //a
+        System.out.println("Saber es Poder");
+
+        //b
+        System.out.print("Saber ");
+        System.out.print("es ");
+        System.out.println("Poder");
+
+        //c
+        System.out.println("================");
+        System.out.println("|Saber es Poder|");
+        System.out.println("================");
 
         //Problema 3
         System.out.println("********");
