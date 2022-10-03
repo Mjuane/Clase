@@ -434,14 +434,14 @@ public class BasicElements {
         int numero2 = 0;
         double division;
         int modulo;
-        Scanner leer = new Scanner(System.in);
+        Scanner leer3 = new Scanner(System.in);
 
         // Entrada de datos
         System.out.print("Introduzca un numero real: ");
-        numero1 = leer.nextDouble();
+        numero1 = leer3.nextDouble();
 
         System.out.print("Introduzca un numero entero: ");
-        numero2 = leer.nextInt();
+        numero2 = leer3.nextInt();
 
         //Algoritmos
         division = numero1 / numero2;
@@ -455,6 +455,20 @@ public class BasicElements {
         System.out.println("Problema 4");
         System.out.println("********");
         //Solución
+        //Declaracion de variables
+        int farenheit = 0;
+        int celsius = 0;
+        Scanner leer4 = new Scanner(System.in);
+
+        //Entrada de datos
+        System.out.print("Introduzca la temperatura en Farenheit: ");
+        farenheit = leer4.nextInt();
+
+        //Algoritmos
+        celsius = (((farenheit - 32) * 5) / 9);
+
+        //Salida de datos
+        System.out.printf("%d grados Farenheit son %d grados Celsius\n", farenheit, celsius);
 
         //Problema 5
         System.out.println("********");
