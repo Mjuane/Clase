@@ -296,6 +296,13 @@ public class BasicElements {
         System.out.println("Ejercicio 29");
         System.out.println("********");
         //Solución
+        int num29, divisor29 = 0;
+        num29 = 100;
+        System.out.println("num inicial= " + num29);
+        //num29 = num29 / divisor29;
+        //num29 = num29 / 2;
+        //System.out.print("num / 2= ");
+        //System.out.println(num29);
 
         //Ejercicio 30
         System.out.println("********");
