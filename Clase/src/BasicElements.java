@@ -392,5 +392,63 @@ public class BasicElements {
         m37 /= n37 + 2;
         System.out.printf("%d", m37);
 
+        //Problema 1
+        System.out.println("********");
+        System.out.println("Problema 1");
+        System.out.println("********");
+        //Solución
+        int overflow = 2147483647;
+        System.out.println("Overflow= " + overflow);
+        overflow++;
+        System.out.println("Overflow + 1= " + overflow);
+
+        //Problema 2
+        System.out.println("********");
+        System.out.println("Problema 2");
+        System.out.println("********");
+        //Solución
+
+        //Problema 3
+        System.out.println("********");
+        System.out.println("Problema 3");
+        System.out.println("********");
+        //Solución
+
+        //Problema 4
+        System.out.println("********");
+        System.out.println("Problema 4");
+        System.out.println("********");
+        //Solución
+
+        //Problema 5
+        System.out.println("********");
+        System.out.println("Problema 5");
+        System.out.println("********");
+        //Solución
+
+        //Problema 6
+        System.out.println("********");
+        System.out.println("Problema 6");
+        System.out.println("********");
+        //Solución
+
+        //Problema 7
+        System.out.println("********");
+        System.out.println("Problema 7");
+        System.out.println("********");
+        //Solución
+
+        //Problema 8
+        System.out.println("********");
+        System.out.println("Problema 8");
+        System.out.println("********");
+        //Solución
+
+        //Problema 9
+        System.out.println("********");
+        System.out.println("Problema 9");
+        System.out.println("********");
+        //Solución
+
     }
 }
