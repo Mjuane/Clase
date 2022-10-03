@@ -353,6 +353,12 @@ public class BasicElements {
         System.out.println("Ejercicio 34");
         System.out.println("********");
         //Solución
+        char character;
+        character = 'c';
+        System.out.println("character: " + character);
+        --character;
+        System.out.println("character: " + character);
+        System.out.println("character: " + character-- + character + character++ + character);
 
         //Ejercicio 35
         System.out.println("********");
