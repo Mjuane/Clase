@@ -322,6 +322,12 @@ public class BasicElements {
         System.out.println("Ejercicio 31");
         System.out.println("********");
         //Solución
+        int v1 = 1, v2 = 2, v3 = 3, v4 = 4;
+        float v5, v6 =(float) 2.2;
+        v5 = v4 + v3 * v2 - v1;
+        v6 = v5 - v6;
+        v5 = (long) v6;
+        System.out.printf("%.1f %.1f\n", v5, v6);
 
         //Ejercicio 32
         System.out.println("********");
