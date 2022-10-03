@@ -378,6 +378,10 @@ public class BasicElements {
         System.out.println("Ejercicio 36");
         System.out.println("********");
         //Solución
+        double saldo36;
+        saldo36 = (2 / 3) * 2;
+        saldo36++;
+        System.out.printf("%.2f\n", saldo36);
 
         //Ejercicio 37
         System.out.println("********");
