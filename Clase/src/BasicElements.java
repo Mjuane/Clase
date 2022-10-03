@@ -334,6 +334,11 @@ public class BasicElements {
         System.out.println("Ejercicio 32");
         System.out.println("********");
         //Solución
+        int a32, b32, c32;
+        a32 = 2;
+        b32 = 4;
+        c32 = 4;
+        System.out.println(a32 * b32 / 2 * c32);
 
         //Ejercicio 33
         System.out.println("********");
