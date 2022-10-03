@@ -345,6 +345,8 @@ public class BasicElements {
         System.out.println("Ejercicio 33");
         System.out.println("********");
         //Solución
+        System.out.println("a)Se compara si la var seguir es true y devuelve true o false");
+        System.out.println("b)Se asigna el valor true a la var seguir que tiene que ser boolean");
 
         //Ejercicio 34
         System.out.println("********");
