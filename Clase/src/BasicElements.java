@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 public class BasicElements {
 
     public static void main(String[] args){
@@ -425,6 +429,26 @@ public class BasicElements {
         System.out.println("Problema 3");
         System.out.println("********");
         //Solución
+        //Declaracion de variables
+        double numero1 = 0;
+        int numero2 = 0;
+        double division;
+        int modulo;
+        Scanner leer = new Scanner(System.in);
+
+        // Entrada de datos
+        System.out.print("Introduzca un numero real: ");
+        numero1 = leer.nextDouble();
+
+        System.out.print("Introduzca un numero entero: ");
+        numero2 = leer.nextInt();
+
+        //Algoritmos
+        division = numero1 / numero2;
+        modulo = (int)division % numero2;
+
+        //Salida de informacion
+        System.out.println("La division es: " + division + "/nEl modulo es: " + modulo);
 
         //Problema 4
         System.out.println("********");
