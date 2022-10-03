@@ -309,6 +309,13 @@ public class BasicElements {
         System.out.println("Ejercicio 30");
         System.out.println("********");
         //Solución
+        int m30 = 1, n30 = 4, k30 = 2, j30 = 1;
+        float x30, valor30 = (float)1.1;
+        x30 = m30 + n30 / k30 + j30;
+        valor30 = x30 + valor30;
+        x30 = (long) valor30;
+        x30 = x30 + valor30;
+        System.out.println(x30);
 
         //Ejercicio 31
         System.out.println("********");
