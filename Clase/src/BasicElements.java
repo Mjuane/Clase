@@ -388,6 +388,9 @@ public class BasicElements {
         System.out.println("Ejercicio 37");
         System.out.println("********");
         //Solución
+        int m37 = 7, n37 = 2;
+        m37 /= n37 + 2;
+        System.out.printf("%d", m37);
 
     }
 }
