@@ -365,6 +365,13 @@ public class BasicElements {
         System.out.println("Ejercicio 35");
         System.out.println("********");
         //Solución
+        int var35 = 1;
+        boolean r35, s35, t35, v35;
+        r35 = (var35 > 1) && (var35++ < 100);
+        s35 = (100 < var35) && (150 > var35++);
+        t35 = (100 == var35) || (200 > var35++);
+        v35 = (100 == var35) || (200 > var35++);
+        System.out.println(r35 + " " + s35 + " " + t35 + " " + v35);
 
         //Ejercicio 36
         System.out.println("********");
