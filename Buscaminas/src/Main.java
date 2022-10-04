@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.lang.Math;
 
 public class Main {
@@ -48,8 +49,47 @@ public class Main {
             } else {
                 tablero[nRandom1][nRandom2] = "x";
                 minasColocadas++;
+                sumarColindantes(tablero, nRandom1, nRandom2, filas, columnas);
             }
         }
+    }
+
+    public static void sumarColindantes(String[][] args, int x, int y, int z, int c){
+        int filaActual = x;
+        int columnaActual = y;
+        String[][] tablero = args;
+        int filas = z;
+        int columnas = c;
+
+        //Esquina izq-arriba
+        if (filaActual == 0 && columnaActual == 0){
+            tablero[filaActual+1][y] += 1;
+            tablero[filaActual][y+1] += 1;
+            tablero[filaActual+1][y+1] += 1;
+        }else {// Pared izq
+            if (filaActual >= 1 && columnaActual == 0){
+                tablero[filaActual+1][columnaActual] += 1;
+            }else {//Pared arriba
+                if (filaActual == 0 && columnaActual >= 1){
+                    tablero[filaActual+1][columnaActual+1] += 1;
+                }else {//Esquina der-abajo
+                    if (filaActual == filas-1 && columnaActual == columnas-1){
+                        tablero[filaActual+1][columnaActual+1] += 1;
+                    }else {//Pared derecha
+                        if (filaActual < filas-1 && columnaActual == columnas-1){
+                            tablero[filaActual+1][columnaActual+1] += 1;
+                        }else {//Pared abajo
+                            if (filaActual < filas-1 && columnaActual == columnas-1){
+                                tablero[filaActual+1][columnaActual+1] += 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
     }
 
     public static void dibujarTablero(String[][] args, int x, int z){
