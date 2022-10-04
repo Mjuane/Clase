@@ -5,8 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
         //Variables
-        int filas = 20;
-        int columnas = 24;
+        int filas = 16;
+        int columnas = 31;
         int minas = 99;
         char[][] tablero = new char[filas][columnas];
 
