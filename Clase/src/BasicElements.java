@@ -458,6 +458,8 @@ public class BasicElements {
         //Declaracion de variables
         int farenheit = 0;
         int celsius = 0;
+        final double NUEVE_QUINTOS = 9.0 / 5.0;
+        final double TREINTA_Y_DOS = 32.0;
         Scanner leer4 = new Scanner(System.in);
 
         //Entrada de datos
