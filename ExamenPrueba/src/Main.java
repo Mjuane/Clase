@@ -4,6 +4,7 @@ public class Main {
 
         System.out.println(mitjaAritmetica(m));
         System.out.println(valorMinimo(m));
+        System.out.println(indexMinimo(m));
     }
 
     public static double mitjaAritmetica(int[] m){
@@ -28,5 +29,17 @@ public class Main {
             }
         }
         return minimo;
+    }
+    public static int indexMinimo(int[] m){
+        int minimo = Integer.MAX_VALUE;
+        int indexMin = 0;
+
+        for (int i = 0; i < m.length; i++) {
+            if (minimo > m[i]){
+                minimo = m[i];
+                indexMin = i;
+            }
+        }
+        return indexMin;
     }
 }
