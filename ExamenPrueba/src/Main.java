@@ -1,13 +1,4 @@
 public class Main {
-    public static void main(String[] args) {
-        int[] m = {5, 6, 3, 5, 3, 8, 1, 5};
-
-        System.out.println("Media Artimetica: " + mitjaAritmetica(m));
-        System.out.println("Valor minimo: " + valorMinimo(m));
-        System.out.println("Index minimo: " + indexMinimo(m));
-        System.out.println("Valor maximo: " + valorMaximo(m));
-        System.out.println("Index maximo: " + indexMaximo(m));
-    }
 
     public static double mitjaAritmetica(int[] m){
         double mitja = 0;
@@ -65,5 +56,30 @@ public class Main {
             }
         }
         return indexMin;
+    }
+
+    public static boolean estaOrdenado(int[] m){
+        boolean ordenado = false;
+
+        for (int i = 0; i < m.length-1;i++){
+            if (m[i] > m[i+1]){
+                ordenado = true;
+            }else {
+                ordenado = false;
+            }
+        }
+
+        return ordenado;
+    }
+    public static void main(String[] args) {
+        int[] m = {5, 6, 3, 5, 3, 8, 1, 5};
+
+        System.out.println("Media Artimetica: " + mitjaAritmetica(m));
+        System.out.println("Valor minimo: " + valorMinimo(m));
+        System.out.println("Index minimo: " + indexMinimo(m));
+        System.out.println("Valor maximo: " + valorMaximo(m));
+        System.out.println("Index maximo: " + indexMaximo(m));
+        System.out.println("Esta ordenado ascendente: " + estaOrdenado(m));
+
     }
 }
