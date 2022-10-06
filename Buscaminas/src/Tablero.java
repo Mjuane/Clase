@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Tablero {
     //Variables
     private final int filas = 16;
@@ -7,8 +9,10 @@ public class Tablero {
     //Metodos
 
     public void crearTablero(){
+        List<Casilla> casilla
         for (int i = 0; i < filas; i++){
             for (int k = 0; k < columnas;k++){
+
                 tablero[i][k] = '0';
             }
         }
