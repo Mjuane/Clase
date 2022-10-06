@@ -98,7 +98,7 @@ public class Main {
             invertido[(m.length-1)-i] = m[i];
         }
 
-        inv = Arrays.toString(invertido);
+        inv = Arrays.toString(invertido);//Arrays.toString(array) pasa a string toda la infomracion de la array
         return inv;
     }
 
