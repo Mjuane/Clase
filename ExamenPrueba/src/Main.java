@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
 
     public static double mitjaAritmetica(int[] m){
@@ -88,6 +91,17 @@ public class Main {
         return ordenado;
     }
 
+    public static String invertir(int[] m){
+        int[] invertido = new int[m.length];
+        String inv = " ";
+        for (int i = 0; i < m.length;i++){
+            invertido[(m.length-1)-i] = m[i];
+        }
+
+        inv = Arrays.toString(invertido);
+        return inv;
+    }
+
     public static void main(String[] args) {
         int[] m = {5, 6, 3, 5, 3, 8, 1, 5};
 //        int[] m = {1, 2, 3, 4, 5, 6, 7, 8};
@@ -100,6 +114,6 @@ public class Main {
         System.out.println("Index maximo: " + indexMaximo(m));
         System.out.println("Esta ordenado ascendente: " + estaOrdenadoAscendente(m));
         System.out.println("Esta ordenado descendiente: " + estaOrdenadoDescendiente(m));
-
+        System.out.println(invertir(m));
     }
 }
