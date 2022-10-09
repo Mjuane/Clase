@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -102,10 +101,26 @@ public class Main {
         return inv;
     }
 
+    public static int indexPrimeraOcurrencia(int[] m, int numero){
+        int index = 0;
+
+        for (int i = 0; i < m.length-1;i++){
+            if (m[i] == numero) {
+                index = i;
+                break;
+            }else {
+                index = -1;
+            }
+        }
+
+        return index;
+    }
+
     public static void main(String[] args) {
         int[] m = {5, 6, 3, 5, 3, 8, 1, 5};
 //        int[] m = {1, 2, 3, 4, 5, 6, 7, 8};
         //int[] m = {8, 7, 6, 5, 4, 3, 2, 3};
+        int numero = 3;
 
         System.out.println("Media Artimetica: " + mitjaAritmetica(m));
         System.out.println("Valor minimo: " + valorMinimo(m));
@@ -114,6 +129,7 @@ public class Main {
         System.out.println("Index maximo: " + indexMaximo(m));
         System.out.println("Esta ordenado ascendente: " + estaOrdenadoAscendente(m));
         System.out.println("Esta ordenado descendiente: " + estaOrdenadoDescendiente(m));
-        System.out.println(invertir(m));
+        System.out.println("Ordenado a la inversa: " + invertir(m));
+        System.out.println("Primer index del numero dado: " + indexPrimeraOcurrencia(m, numero));
     }
 }
