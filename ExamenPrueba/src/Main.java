@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
 
     public static double mitjaAritmetica(int[] m){
-        double mitja = 0;
+        double mitja;
         int temp = 0;
 
         for (int i = 0; i < m.length;i++){
@@ -92,7 +92,7 @@ public class Main {
 
     public static String invertir(int[] m){
         int[] invertido = new int[m.length];
-        String inv = " ";
+        String inv;
         for (int i = 0; i < m.length;i++){
             invertido[(m.length-1)-i] = m[i];
         }
@@ -116,9 +116,26 @@ public class Main {
         return index;
     }
 
+    public static int valorMasCercanoMedia(int[] m, double media){
+        int numCercano = Integer.MAX_VALUE;
+        int resta;
+        int respuesta = -1;
+        int mediaAritmetica = (int) media;
+
+        for(int i = 0; i < m.length-1;i++){
+            resta = Math.abs(m[i] - mediaAritmetica);
+            if (resta < numCercano) {
+                numCercano = resta;
+                respuesta = m[i];
+            }
+        }
+
+        return respuesta;
+    }
+
     public static void main(String[] args) {
         int[] m = {5, 6, 3, 5, 3, 8, 1, 5};
-//        int[] m = {1, 2, 3, 4, 5, 6, 7, 8};
+        //int[] m = {1, 2, 3, 4, 5, 6, 7, 8};
         //int[] m = {8, 7, 6, 5, 4, 3, 2, 3};
         int numero = 3;
 
@@ -131,5 +148,6 @@ public class Main {
         System.out.println("Esta ordenado descendiente: " + estaOrdenadoDescendiente(m));
         System.out.println("Ordenado a la inversa: " + invertir(m));
         System.out.println("Primer index del numero dado: " + indexPrimeraOcurrencia(m, numero));
+        System.out.println("Valor mas cercano a la media: " + valorMasCercanoMedia(m, mitjaAritmetica(m)));
     }
 }
