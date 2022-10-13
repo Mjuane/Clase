@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class MatriusSencersUtil {
 
     public static double mitjaAritmetica(int[] m){
         double mitja;
