@@ -133,6 +133,35 @@ public class Main {
         return respuesta;
     }
 
+    public static int[] intercambiarValorPorElMaximoHaciaIzq(int[] m, int posicion){
+        int temp = Integer.MIN_VALUE;
+        int tempOriginal = m[posicion];
+        int index = 0;
+        for (int i = 0;i < posicion; i++){
+            if (temp < m[i]) {
+                index = i;
+                temp = m[i];
+            }
+        }
+        if (tempOriginal < temp) {
+            m[index] = tempOriginal;
+            m[posicion] = temp;
+        }
+        return m;
+    }
+
+    public static String arrayOrdenada(int[] m){
+        int[] ordenado = new int[m.length];
+        for (int i = 0; i < m.length; i++){
+            for (int k = 0; k < m.length; k++) {
+                ordenado = intercambiarValorPorElMaximoHaciaIzq(m, k);
+            }
+        }
+
+        String ordenadoString = Arrays.toString(m);
+        return ordenadoString;
+    }
+
     public static void main(String[] args) {
         int[] m = {5, 6, 3, 5, 3, 8, 1, 5};
         //int[] m = {1, 2, 3, 4, 5, 6, 7, 8};
@@ -149,5 +178,6 @@ public class Main {
         System.out.println("Ordenado a la inversa: " + invertir(m));
         System.out.println("Primer index del numero dado: " + indexPrimeraOcurrencia(m, numero));
         System.out.println("Valor mas cercano a la media: " + valorMasCercanoMedia(m, mitjaAritmetica(m)));
+        System.out.println("Matriz ordenada" + arrayOrdenada(m));
     }
 }
