@@ -179,5 +179,6 @@ public class Main {
         System.out.println("Primer index del numero dado: " + indexPrimeraOcurrencia(m, numero));
         System.out.println("Valor mas cercano a la media: " + valorMasCercanoMedia(m, mitjaAritmetica(m)));
         System.out.println("Matriz ordenada" + arrayOrdenada(m));
+        System.out.println("Fin");
     }
 }
