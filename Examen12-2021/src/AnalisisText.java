@@ -1,28 +1,8 @@
 public class AnalisisText {
-    public static void main(String[] args) {
-        char[] delimitadores = {' ', '-', ',', '.', '!', '?', '\''};
-        String pruebaEjecucion = "Una noia anomenada Anna va anar a cercar al b)osc un home, alla hi va trobar un cec que intentava  trobar un figura de metall d'un cuc ben rar. Astorada li va dir que si no ho intentava amb un radar no crec que el trobis. Amb un aparell d'aquests que fan pipiripip segur que el trobraras encara que estigui ben tapat !";
-
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.print("Lista de delimitadores: ");
-        for (char delimitador : delimitadores){
-            System.out.print(delimitador);
-        }
-        System.out.println();
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("Texto de trabajo: " + pruebaEjecucion);
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
-
-    }
 
 
-    public static char[] textoMinusculas(String texto){
+
+    public static char[] textoMinusculas(String texto) {
         int l = texto.length();
         char[] matriz = new char[l];
 
@@ -35,5 +15,67 @@ public class AnalisisText {
         return matriz;
     }
 
+    public static void impimirMatrizChars(char[] matriz) {
+        System.out.print("Texto de trabajo: ");
+        for (char letra : matriz){
+            System.out.print(letra);
+        }
+        System.out.println();
+    }
+
+    public static boolean esDelimitador(char[] matriz, int posicion, char[] deli) {
+        boolean esDeli = false;
+        int l = deli.length;
+
+        for (char c : deli) {
+            if (matriz[posicion] == c) {
+                esDeli = true;
+                break;
+            }
+        }
+
+        return esDeli;
+    }
+
+    public static boolean esInicioDePalabra(char[] matriz, int posicion, char[] deli) {
+        boolean esInicio = false;
+
+        if (esDelimitador(matriz, posicion, deli)){
+        }else if (posicion == 0){
+            esInicio = true;
+        }else if (posicion >= 1 && esDelimitador(matriz, posicion - 1, deli)){
+            esInicio = true;
+        }
+
+        return esInicio;
+    }
+
+    public static void main(String[] args) {
+        char[] delimitadores = {' ', '-', ',', '.', '!', '?', '\''};
+        String pruebaEjecucion = "Una noia anomenada Anna va anar a cercar al bosc un home, alla hi va trobar un cec que intentava  trobar un figura de metall d'un cuc ben rar. Astorada li va dir que si no ho intentava amb un radar no crec que el trobis. Amb un aparell d'aquests que fan pipiripip segur que el trobraras encara que estigui ben tapat !";
+        int posicion = 9;
+
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.print("Lista de delimitadores: ");
+        for (char delimitador : delimitadores){
+            System.out.print(delimitador);
+        }
+        System.out.println();
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        impimirMatrizChars(textoMinusculas(pruebaEjecucion));
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::");
+
+        if (esInicioDePalabra(textoMinusculas(pruebaEjecucion), posicion, delimitadores )){
+            System.out.println("Es inicio");
+        }else {
+            System.out.println("No es inicio");
+        }
+    }
 
 }
