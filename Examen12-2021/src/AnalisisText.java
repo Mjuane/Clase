@@ -50,6 +50,28 @@ public class AnalisisText {
         return esInicio;
     }
 
+    public static int longitudPalabra(char[] matriz, int posicion, char[] deli){
+        int longitud = 0;
+        boolean finDePalabra = false;
+
+        for (int i = posicion; i < matriz.length; i++){
+            for (int k = 0; k < deli.length; k++) {
+                if (matriz[i] != deli[k]){
+                    longitud++;
+                    break;
+                }else {
+                    finDePalabra = true;
+                    break;
+                }
+            }
+            if (finDePalabra){
+                break;
+            }
+        }
+
+        return longitud;
+    }
+
     public static void main(String[] args) {
         char[] delimitadores = {' ', '-', ',', '.', '!', '?', '\''};
         String pruebaEjecucion = "Una noia anomenada Anna va anar a cercar al bosc un home, alla hi va trobar un cec que intentava  trobar un figura de metall d'un cuc ben rar. Astorada li va dir que si no ho intentava amb un radar no crec que el trobis. Amb un aparell d'aquests que fan pipiripip segur que el trobraras encara que estigui ben tapat !";
@@ -76,6 +98,10 @@ public class AnalisisText {
         }else {
             System.out.println("No es inicio");
         }
+
+        System.out.println(longitudPalabra(textoMinusculas(pruebaEjecucion), posicion, delimitadores ));
+
+
     }
 
 }
