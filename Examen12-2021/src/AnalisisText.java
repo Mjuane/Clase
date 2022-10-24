@@ -58,11 +58,10 @@ public class AnalisisText {
             for (int k = 0; k < deli.length; k++) {
                 if (matriz[i] != deli[k]){
                     longitud++;
-                    break;
                 }else {
                     finDePalabra = true;
-                    break;
                 }
+                break;
             }
             if (finDePalabra){
                 break;
