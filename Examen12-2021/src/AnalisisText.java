@@ -71,6 +71,17 @@ public class AnalisisText {
         return longitud;
     }
 
+    public static String retornarPalabra(char[] matriz, int posicion, char[] deli){
+        String palabra = "";
+        int longitud = longitudPalabra(matriz, posicion, deli );
+
+        for (int i = 0; i <= longitud; i++){
+            palabra += matriz[i + longitud];
+        }
+
+        return palabra;
+    }
+
     public static void main(String[] args) {
         char[] delimitadores = {' ', '-', ',', '.', '!', '?', '\''};
         String pruebaEjecucion = "Una noia anomenada Anna va anar a cercar al bosc un home, alla hi va trobar un cec que intentava  trobar un figura de metall d'un cuc ben rar. Astorada li va dir que si no ho intentava amb un radar no crec que el trobis. Amb un aparell d'aquests que fan pipiripip segur que el trobraras encara que estigui ben tapat !";
@@ -99,6 +110,8 @@ public class AnalisisText {
         }
 
         System.out.println(longitudPalabra(textoMinusculas(pruebaEjecucion), posicion, delimitadores ));
+
+        System.out.println(retornarPalabra(textoMinusculas(pruebaEjecucion), posicion, delimitadores ));
 
 
     }
